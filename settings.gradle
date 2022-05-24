@@ -1,0 +1,2 @@
+rootProject.name = "ToggleButton_&_Switch"
+include ':app'
