@@ -2,6 +2,7 @@ package com.example.togglebutton__switch;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -60,6 +61,11 @@ public class MainActivity extends AppCompatActivity {
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(imagem);
         toast.show();
+    }
+
+    public void mudarTela(View view){
+        Intent intent = new Intent(this, alertDialog.class);
+        startActivity(intent);
     }
 
 
